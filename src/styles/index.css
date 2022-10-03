@@ -1,12 +1,24 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.row {
+    background-color: black;
+    height: 160px;
+    margin-top: 10px;
+}
+.col{
+    margin-top:10px;
+    margin-right:80px;
+    margin-left:10px;
+    padding:0;
+    text-align:center;
+    color:white;
+    border: 1px solid;
+    border-color:gray;
+    border-radius: 10px;
+    font-size:100px;
+    font-family:monospace;
+}
+.fa-clock{
+    margin-top:20px;
+    margin-left:100px;
+    margin-left:0px;
+    font-size: 80px;
+}
