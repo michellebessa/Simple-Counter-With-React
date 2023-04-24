@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 
-export const Box = () => {
+export default function Box () {
 
     const[count, setCount] = useState(0)
     setTimeout(()=>{
         setCount(count=>count+1)
-    },1000)
+    },1000) //1000 milliseconds = 1 second
     let one = Math.floor(count)
     let two = Math.floor(count/10)
     let three = Math.floor(count/100)
     let four = Math.floor(count/1000)
     let five = Math.floor(count/10000)
-    let six = Math.floor(count/100000)
 
 	return (
-        <div class="row">
-          <div class="col">
-          <i class="far fa-clock"></i>
+    <div className="container">
+        <div className="row" id="firstrow">
+          <div className="col ps-0 pe-0">
+          <i className="far fa-clock"></i>
           </div>
-          <div class="col">
-          {six%10}
           </div>
-          <div class="col">
+          <div className="row">
+          <div className="col">
           {five%10}
           </div>
-          <div class="col">
+          <div className="col">
           {four%10}
           </div>
-          <div class="col">
+          <div className="col">
           {three%10}
           </div>
-          <div class="col">
+          <div className="col">
             {two%10}
           </div>
-          <div class="col">
+          <div className="col">
             {one%10}
           </div>
         </div>
+      </div>
 	);
 };
 
